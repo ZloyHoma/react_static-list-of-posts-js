@@ -1,13 +1,13 @@
 import './CommentInfo.scss';
 
 export const CommentInfo = ({ comment }) => (
-  <div className="CommentInfo" key={comment.id}>
+  <div className="CommentInfo">
     <div className="CommentInfo__title">
-      <strong>{comment.title}</strong>
+      <strong className="CommentInfo__name">{comment.name}</strong>
 
       {' by '}
 
-      <a className="CommentInfo__email" href={comment.email}>
+      <a className="CommentInfo__email" href={`mailto:${comment.email}`}>
         {comment.email}
       </a>
     </div>
