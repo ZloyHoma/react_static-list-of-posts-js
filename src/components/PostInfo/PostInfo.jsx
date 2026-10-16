@@ -1,5 +1,6 @@
 import './PostInfo.scss';
 import { CommentList } from '../CommentList';
+import { UserInfo } from '../UserInfo';
 
 export const PostInfo = ({ post, author, comments, users }) => (
   <div key={post.id} className="PostInfo">
@@ -8,9 +9,7 @@ export const PostInfo = ({ post, author, comments, users }) => (
 
       <p>
         {' Posted by  '}
-        <a className="UserInfo" href={author.email}>
-          {author.name}
-        </a>
+        <UserInfo user={author} />
       </p>
     </div>
 
