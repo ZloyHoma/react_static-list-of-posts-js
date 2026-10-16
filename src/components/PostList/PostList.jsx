@@ -13,8 +13,7 @@ export const PostList = ({ posts, users, comments }) => (
         <PostInfo
           key={post.id}
           post={post}
-          user
-          ={user}
+          user={user}
           comments={postComments}
           users={users}
         />
