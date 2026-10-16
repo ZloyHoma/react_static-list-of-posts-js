@@ -15,7 +15,6 @@ export const PostList = ({ posts, users, comments }) => (
           post={post}
           user={user}
           comments={postComments}
-          users={users}
         />
       );
     })}
