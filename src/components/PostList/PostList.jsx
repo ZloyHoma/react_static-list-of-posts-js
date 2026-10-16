@@ -12,9 +12,11 @@ export const PostList = ({ posts, users, comments }) => (
       return (
         <PostInfo
           key={post.id}
-          post={post}
-          user={user}
-          comments={postComments}
+          post={{
+            ...post,
+            user: user,
+            comments: postComments,
+          }}
         />
       );
     })}
